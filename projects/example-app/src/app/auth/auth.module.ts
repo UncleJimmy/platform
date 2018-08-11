@@ -23,7 +23,9 @@ export const COMPONENTS = [LoginPageComponent, LoginFormComponent];
 export class AuthModule {
   static forRoot(): ModuleWithProviders {
     return {
+      /* tslint:disable:no-use-before-declare */
       ngModule: RootAuthModule,
+      /* tslint:enable:no-use-before-declare */
       providers: [AuthService, AuthGuard],
     };
   }
